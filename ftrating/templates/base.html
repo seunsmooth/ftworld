@@ -1,0 +1,24 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Financial Time.</title>
+      {% else %}
+      <title>Welcome to Financial Time</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Financial Times Simple Rating Score: <a href="/index/login">login</a>&nbsp;<a href="/index">Home</a></div>
+        
+
+<hr>
+        {% block content %}{% endblock %}
+        <h1>Hello, {{ user.username }}!</h1>
+        <h1>      Please rate our website </h1>
+        <h2>  >----------------------------HAPPY OR NOT</h2>
+
+        <p>{{ s.content | phantom }}     {{ d.content | phantom (50)}} {{ ff.content | phantom (50)}}    {{ t.content | phantom (50)}}</p>
+
+       <h2> --------------------------------------------</h2>
+
+    </body>
+</html>
