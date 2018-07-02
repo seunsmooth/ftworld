@@ -1,0 +1,12 @@
+all:
+  children:
+    elg-nodes:
+      hosts:
+        centos.microtest.co.uk:
+          ansible_host: 10.198.165.73
+          ansible_user: root
+
+
+#[centos]
+#10.198.165.73
+#hosts:10.198.165.73
